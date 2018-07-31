@@ -1,3 +1,11 @@
+<?php
+
+require 'vendor/autoload.php';
+
+use Carbon\Carbon;
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,7 +48,7 @@
 
         <div class="collapse navbar-collapse navbar-right">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Beranda</a></li>
+            <li class="active"><a href="index.php">Beranda</a></li>
             <li><a href="internasional.html">Internasional</a></li>
             <li><a href="nasional.html">Nasional</a></li>
             <li><a href="kontak.html">Kontak</a></li>
@@ -80,12 +88,12 @@
           </div>
 
           <a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
-						<i class="fa fa-angle-left"></i>
-					</a>
+            <i class="fa fa-angle-left"></i>
+          </a>
 
           <a class=" right carousel-control hidden-xs" href="#carousel-slider" data-slide="next">
-						<i class="fa fa-angle-right"></i>
-					</a>
+            <i class="fa fa-angle-right"></i>
+          </a>
         </div>
         <!--/#carousel-slider-->
       </div>
@@ -106,8 +114,12 @@
               <div class="pull-left" style="width: 45%; margin: 12px; height: 120px;">
                 <img class="img-responsive" src="images/terkini/recent/photo1.png" style="height: 100%;">
               </div>
-              <h2 style="margin: 12px;"><a href="#">3 Alasan Arsenal Harus Jual Mesut Ozil</a></h2>
-              <p style="margin-top: 38px;">INTERNASIONAL <time data-dateformat="auto" itemprop="datePublished" datetime="2018-07-23T14:39:49+00:00" data-utc="1532356789000" style="margin-left: 10px;">10.43</time></p>
+              <h2 style="margin: 12px;"><a href="internasional-1.html">3 Alasan Arsenal Harus Jual Mesut Ozil</a></h2>
+              <p style="margin-top: 15px;">INTERNASIONAL <br>
+              <?php
+              $sekarang = Carbon::now();
+
+              echo $sekarang->addDay(); ?></p>
             </div>
           </div>
           <!--/.col-md-4-->
@@ -117,8 +129,12 @@
               <div class="pull-left" style="width: 45%; margin: 12px; height: 120px;">
                 <img class="img-responsive" src="images/terkini/recent/photo2.png" style="height: 100%;">
               </div>
-              <h2 style="margin: 12px;"><a href="#">Nominasi Pemain Terbaik FIFA 2018</a></h2>
-              <p style="margin-top: 38px;">INTERNASIONAL <time data-dateformat="auto" itemprop="datePublished" datetime="2018-07-23T14:39:49+00:00" data-utc="1532356789000" style="margin-left: 10px;">21:25</time></p>
+              <h2 style="margin: 12px;"><a href="internasional-2.html">Nominasi Pemain Terbaik FIFA 2018</a></h2>
+              <p style="margin-top: 15px;">INTERNASIONAL <br>
+              <?php
+              $sekarang = Carbon::now();
+
+              echo $sekarang->addDay(); ?></p>
             </div>
           </div>
           <!--/.col-md-4-->
@@ -128,8 +144,12 @@
               <div class="pull-left" style="width: 45%; margin: 12px; height: 120px;">
                 <img class="img-responsive" src="images/terkini/recent/photo3.png" style="height: 100%;">
               </div>
-              <h2 style="margin: 12px;"><a href="#">Ibra: Seandainya Saya Datang Lebih Muda</a></h2>
-              <p style="margin-top: 38px;">INTERNASIONAL <time data-dateformat="auto" itemprop="datePublished" datetime="2018-07-23T14:39:49+00:00" data-utc="1532356789000" style="margin-left: 10px;">22:40</time></p>
+              <h2 style="margin: 12px;"><a href="internasional-3.html">Ibra: Seandainya Saya Datang Lebih Muda</a></h2>
+              <p style="margin-top: 15px;">INTERNASIONAL <br>
+              <?php
+              $sekarang = Carbon::now();
+
+              echo $sekarang->addDay(); ?></p>
             </div>
           </div>
           <!--/.col-md-4-->
@@ -140,7 +160,11 @@
                 <img class="img-responsive" src="images/terkini/recent/photo4.png" style="height: 100%;">
               </div>
               <h2 style="margin: 12px;"><a href="#">Laga Tunda Persebaya vs PSBI</a></h2>
-              <p style="margin-top: 38px;">NASIONAL <time data-dateformat="auto" itemprop="datePublished" datetime="2018-07-23T14:39:49+00:00" data-utc="1532356789000" style="margin-left: 10px;">06:15</time></p>
+              <p style="margin-top: 15px;">NASIONAL <br>
+              <?php
+              $sekarang = Carbon::now();
+
+              echo $sekarang->addDay(); ?></p>
             </div>
           </div>
           <!--/.col-md-4-->
@@ -150,8 +174,12 @@
               <div class="pull-left" style="width: 45%; margin: 12px; height: 120px;">
                 <img class="img-responsive" src="images/terkini/recent/photo5.png" style="height: 100%;">
               </div>
-              <h2 style="margin: 12px;"><a href="#">Pelatih Semen Padang Rahasiakan Pemain Incaran</a></h2>
-              <p style="margin-top: 17px;">NASIONAL <time data-dateformat="auto" itemprop="datePublished" datetime="2018-07-23T14:39:49+00:00" data-utc="1532356789000" style="margin-left: 10px;">23.05</time></p>
+              <h2 style="margin: 12px;"><a href="#">Semen Padang: Rahasiakan Pemain Incaran</a></h2>
+              <p style="margin-top: 15px;">NASIONAL <br>
+              <?php
+              $sekarang = Carbon::now();
+
+              echo $sekarang->addDay(); ?></p>
             </div>
           </div>
           <!--/.col-md-4-->
@@ -161,8 +189,12 @@
               <div class="pull-left" style="width: 45%; margin: 12px; height: 120px;">
                 <img class="img-responsive" src="images/terkini/recent/photo6.png" style="height: 100%;">
               </div>
-              <h2 style="margin: 12px;"><a href="#">Melihat Jagoan Sepak Bola ASEAN di Asian Games</a></h2>
-              <p style="margin-top: 18px;">NASIONAL <time data-dateformat="auto" itemprop="datePublished" datetime="2018-07-23T14:39:49+00:00" data-utc="1532356789000" style="margin-left: 10px;">19:15</time></p>
+              <h2 style="margin: 12px;"><a href="#">Jagoan Sepak Bola ASEAN di Asian Games</a></h2>
+              <p style="margin-top: 15px;">NASIONAL <br>
+              <?php
+              $sekarang = Carbon::now();
+
+              echo $sekarang->addDay(); ?></p>
             </div>
           </div>
           <!--/.col-md-4-->
@@ -178,8 +210,12 @@
               <div class="pull-left" style="width: 45%; margin: 12px; height: 120px;">
                 <img class="img-responsive" src="images/terkini/recent/photo7.png" style="height: 100%;">
               </div>
-              <h2 style="margin: 12px;"><a href="#">Marotta Konfirmasi Bonucci Tertarik Balik ke Juventus</a></h2>
-              <p style="margin-top: 15px;">INTERNASIONAL <time data-dateformat="auto" itemprop="datePublished" datetime="2018-07-23T14:39:49+00:00" data-utc="1532356789000" style="margin-left: 10px;">11.46</time></p>
+              <h2 style="margin: 12px;"><a href="internasional-4.html">Bonucci Tertarik Balik ke Juventus</a></h2>
+              <p style="margin-top: 38px;">INTERNASIONAL <br>
+              <?php
+              $sekarang = Carbon::now();
+
+              echo $sekarang->addDay(); ?></p>
             </div>
           </div>
           <!--/.col-md-4-->
@@ -189,8 +225,12 @@
               <div class="pull-left" style="width: 45%; margin: 12px; height: 120px;">
                 <img class="img-responsive" src="images/terkini/recent/photo8.png" style="height: 100%;">
               </div>
-              <h2 style="margin: 12px;"><a href="#">Timnas Indonesia U-16 Siap Tempur Hadapi Piala AFF</a></h2>
-              <p style="margin-top: 15px;">NASIONAL <time data-dateformat="auto" itemprop="datePublished" datetime="2018-07-23T14:39:49+00:00" data-utc="1532356789000" style="margin-left: 10px;">21:25</time></p>
+              <h2 style="margin: 12px;"><a href="nasional-4.html">Timnas Indonesia U-16 Siap Tempur</a></h2>
+              <p style="margin-top: 16px;">NASIONAL <br>
+              <?php
+              $sekarang = Carbon::now();
+
+              echo $sekarang->addDay(); ?></p>
             </div>
           </div>
           <!--/.col-md-4-->
@@ -200,8 +240,12 @@
               <div class="pull-left" style="width: 45%; margin: 12px; height: 120px;">
                 <img class="img-responsive" src="images/terkini/recent/photo9.png" style="height: 100%;">
               </div>
-              <h2 style="margin: 12px;"><a href="#">Alexis Jadi Senjata MU Musim Depan</a></h2>
-              <p style="margin-top: 36px;">INTERNASIONAL <time data-dateformat="auto" itemprop="datePublished" datetime="2018-07-23T14:39:49+00:00" data-utc="1532356789000" style="margin-left: 10px;">20:13</time></p>
+              <h2 style="margin: 12px;"><a href="internasional-5.html">Alexis Jadi Senjata MU Musim Depan</a></h2>
+              <p style="margin-top: 15px;">INTERNASIONAL <br>
+              <?php
+              $sekarang = Carbon::now();
+
+              echo $sekarang->addDay(); ?></p>
             </div>
           </div>
           <!--/.col-md-4-->
@@ -712,11 +756,11 @@
           <div class="widget">
             <h3>Terkait</h3>
             <ul>
-              <li><a href="#">Indonesia</a></li>
-              <li><a href="#">Liga Inggris</a></li>
-              <li><a href="#">Liga Spanyol</a></li>
-              <li><a href="#">Liga Italia</a></li>
-              <li><a href="#">Dunia</a></li>
+              <li><a href="nasional.html">Indonesia</a></li>
+              <li><a href="internasional.html">Liga Inggris</a></li>
+              <li><a href="internasional.html">Liga Spanyol</a></li>
+              <li><a href="internasional.html">Liga Italia</a></li>
+              <li><a href="internasional.html">Dunia</a></li>
             </ul>
           </div>
         </div>
@@ -726,11 +770,11 @@
           <div class="widget">
             <h3>Pendukung</h3>
             <ul>
-              <li><a href="#">Bola.net</a></li>
-              <li><a href="#">Bola.com</a></li>
-              <li><a href="#">Goal.com</a></li>
-              <li><a href="#">Liputan6.com</a></li>
-              <li><a href="#">Bola.okezone.com</a></li>
+              <li><a href="https://www.bola.net/">Bola.net</a></li>
+              <li><a href="https://www.bola.com/">Bola.com</a></li>
+              <li><a href="http://www.goal.com/">Goal.com</a></li>
+              <li><a href="https://www.liputan6.com/">Liputan6.com</a></li>
+              <li><a href="https://bola.okezone.com/">Bola.okezone.com</a></li>
             </ul>
           </div>
         </div>
@@ -740,10 +784,10 @@
           <div class="widget">
             <h3>Bolaku Store</h3>
             <ul>
-              <li><a href="#">Sepatu Bola</a></li>
-              <li><a href="#">Aksesoris</a></li>
-              <li><a href="#">Jersey</a></li>
-              <li><a href="#">Bola</a></li>
+              <li><a href="store.html">Sepatu Bola</a></li>
+              <li><a href="store.html">Aksesoris</a></li>
+              <li><a href="store.html">Jersey</a></li>
+              <li><a href="store.html">Bola</a></li>
             </ul>
           </div>
         </div>
@@ -753,8 +797,8 @@
           <div class="widget">
             <h3>Lainnya</h3>
             <ul>
-              <li><a href="#">Video</a></li>
-              <li><a href="#">Foto</a></li>
+              <li><a href="video.html">Video</a></li>
+              <li><a href="foto.html">Foto</a></li>
             </ul>
           </div>
         </div>
@@ -801,9 +845,9 @@
         </div>
         <div class="col-sm-6">
           <ul class="pull-right">
-            <li><a href="#">Beranda</a></li>
-            <li><a href="#">Tentang Kami</a></li>
-            <li><a href="#">Kontak</a></li>
+            <li><a href="index.php">Beranda</a></li>
+            <li><a href="tentang-kami.html">Tentang Kami</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
           </ul>
         </div>
       </div>

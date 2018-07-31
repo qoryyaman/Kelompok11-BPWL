@@ -39,11 +39,12 @@
 
         <div class="collapse navbar-collapse navbar-right">
           <ul class="nav navbar-nav">
-            <li><a href="index.html">Beranda</a></li>
+            <li><a href="index.php">Beranda</a></li>
             <li><a href="internasional.html">Internasional</a></li>
             <li><a href="nasional.html">Nasional</a></li>
             <li class="active"><a href="kontak.html">Kontak</a></li>
             <li><a href="tentang-kami.html">Tentang Kami</a></li>
+            <li><a href="store.html">Store</a></li>
           </ul>
         </div>
       </div>
@@ -54,39 +55,29 @@
   </header>
   <!--/header-->
 
-  <div class="map">
-    <div id="google-map" data-latitude="40.713732" data-longitude="-74.0092704"></div>
-  </div>
-
   <section id="contact-page">
     <div class="container">
-      <div class="center">
-        <h2>Drop Your Message</h2>
-        <p class="lead">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div class="center wow fadeInDown" style="margin-top: 140px;">
+          <h2>Kirim <span>Pesan</span> Anda Disini</h2>
       </div>
       <div class="row contact-wrap">
         <div class="col-sm-8 col-sm-offset-2">
           <div id="sendmessage">Your message has been sent. Thank you!</div>
           <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
+          <form action="insert.php" method="post" role="form" class="contactForm">
             <div class="form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <input type="text" name="name" class="form-control" id="name" placeholder="Nama Anda" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
               <div class="validation"></div>
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+              <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" data-rule="email" data-msg="Please enter a valid email" />
               <div class="validation"></div>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Tulis pesan Anda disini" placeholder="Tulis pesan Anda disini"></textarea>
               <div class="validation"></div>
             </div>
-            <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-              <div class="validation"></div>
-            </div>
-
-            <div class="text-center"><button type="submit" class="btn btn-primary btn-lg">Send Message</button></div>
+            <div class="text-center"><input type="submit" name="submit" class="btn btn-primary btn-lg" value="Kirim"></input></div>
           </form>
         </div>
       </div>
@@ -101,12 +92,13 @@
       <div class="row">
         <div class="col-md-3 col-sm-6">
           <div class="widget">
-            <h3>Company</h3>
+            <h3>Terkait</h3>
             <ul>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">We are hiring</a></li>
-              <li><a href="#">Meet the team</a></li>
-              <li><a href="#">Copyright</a></li>
+              <li><a href="nasional.html">Indonesia</a></li>
+              <li><a href="internasional.html">Liga Inggris</a></li>
+              <li><a href="internasional.html">Liga Spanyol</a></li>
+              <li><a href="internasional.html">Liga Italia</a></li>
+              <li><a href="internasional.html">Dunia</a></li>
             </ul>
           </div>
         </div>
@@ -114,12 +106,13 @@
 
         <div class="col-md-3 col-sm-6">
           <div class="widget">
-            <h3>Support</h3>
+            <h3>Pendukung</h3>
             <ul>
-              <li><a href="#">Faq</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Forum</a></li>
-              <li><a href="#">Documentation</a></li>
+              <li><a href="https://www.bola.net/">Bola.net</a></li>
+              <li><a href="https://www.bola.com/">Bola.com</a></li>
+              <li><a href="http://www.goal.com/">Goal.com</a></li>
+              <li><a href="https://www.liputan6.com/">Liputan6.com</a></li>
+              <li><a href="https://bola.okezone.com/">Bola.okezone.com</a></li>
             </ul>
           </div>
         </div>
@@ -127,12 +120,12 @@
 
         <div class="col-md-3 col-sm-6">
           <div class="widget">
-            <h3>Developers</h3>
+            <h3>Bolaku Store</h3>
             <ul>
-              <li><a href="#">Web Development</a></li>
-              <li><a href="#">SEO Marketing</a></li>
-              <li><a href="#">Theme</a></li>
-              <li><a href="#">Development</a></li>
+              <li><a href="store.html">Sepatu Bola</a></li>
+              <li><a href="store.html">Aksesoris</a></li>
+              <li><a href="store.html">Jersey</a></li>
+              <li><a href="store.html">Bola</a></li>
             </ul>
           </div>
         </div>
@@ -140,12 +133,10 @@
 
         <div class="col-md-3 col-sm-6">
           <div class="widget">
-            <h3>Our Partners</h3>
+            <h3>Lainnya</h3>
             <ul>
-              <li><a href="#">Adipisicing Elit</a></li>
-              <li><a href="#">Eiusmod</a></li>
-              <li><a href="#">Tempor</a></li>
-              <li><a href="#">Veniam</a></li>
+              <li><a href="video.html">Video</a></li>
+              <li><a href="foto.html">Foto</a></li>
             </ul>
           </div>
         </div>
@@ -179,7 +170,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
-          &copy; Gp Theme. All Rights Reserved.
+          &copy; Bolaku. All Rights Reserved.
           <div class="credits">
             <!--
               All the links in the footer should remain intact.
@@ -187,15 +178,14 @@
               Licensing information: https://bootstrapmade.com/license/
               Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Gp
             -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            Designed by <a href="https://bootstrapmade.com/">Jihan, Arya, Qory. Politeknik Caltex Riau 2018.</a>
           </div>
         </div>
         <div class="col-sm-6">
           <ul class="pull-right">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Faq</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="index.php">Beranda</a></li>
+            <li><a href="tentang-kami.html">Tentang Kami</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
           </ul>
         </div>
       </div>
